@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="600.0" style="-fx-background-color: ebe4d9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
+   <children>
+      <Label layoutX="222.0" layoutY="16.0" text="Регистрация">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="522.0" prefHeight="18.0" prefWidth="158.0" text="Введите дату рождения" />
+      <Button fx:id="SignUpButton" layoutX="228.0" layoutY="603.0" mnemonicParsing="false" style="-fx-background-color: b3ac98;" text="Зарегистрироваться" textFill="#fcf8f8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="PasswordField" layoutX="148.0" layoutY="410.0" prefHeight="30.0" prefWidth="303.0" promptText="Пароль">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="SignUpEmail" floatText="Электронная почта" layoutX="148.0" layoutY="349.0" prefHeight="18.0" prefWidth="303.0" />
+      <TextField fx:id="SighUpCodeWord" floatText="  Кодовое слово" layoutX="147.0" layoutY="455.0" prefHeight="38.0" prefWidth="310.0" />
+      <TextField fx:id="SignUpDay" floatText="День" layoutX="160.0" layoutY="541.0" prefHeight="38.0" prefWidth="33.0" />
+      <TextField fx:id="SignUpMonth" floatText="Месяц" layoutX="221.0" layoutY="541.0" prefHeight="38.0" prefWidth="43.0" />
+      <TextField fx:id="SignUpYear" floatText="Год" layoutX="289.0" layoutY="541.0" prefHeight="38.0" prefWidth="26.0" />
+      <TextField fx:id="SignUpFirstName" floatText="Имя" layoutX="148.0" layoutY="86.0" prefHeight="18.0" prefWidth="303.0" />
+      <TextField fx:id="SignUpLastName" floatText="Фамилия" layoutX="148.0" layoutY="143.0" prefHeight="18.0" prefWidth="303.0" />
+      <TextField fx:id="SignUpMiddleName" floatText="Отчество (при наличии)" layoutX="151.0" layoutY="198.0" prefHeight="18.0" prefWidth="303.0" />
+      <TextField fx:id="SignUpNickname" floatText="Никнейм (логин)" layoutX="148.0" layoutY="293.0" prefHeight="18.0" prefWidth="303.0" />
+   </children>
+</AnchorPane>
