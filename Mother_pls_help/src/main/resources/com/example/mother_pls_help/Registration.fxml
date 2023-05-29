@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="600.0" style="-fx-background-color: ebe4d9;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mother_pls_help.RegistrationController">
+   <children>
+      <Label layoutX="222.0" layoutY="16.0" text="Регистрация" textFill="#785514">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="SignUpButton" layoutX="194.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: b3ac98;" text="Зарегистрироваться" textFill="#fcf8f8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="PasswordField" alignment="CENTER" layoutX="148.0" layoutY="395.0" prefHeight="30.0" prefWidth="303.0" promptText="Пароль" scaleShape="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="SignUpEmail" alignment="CENTER" layoutX="150.0" layoutY="331.0" opacity="0.5" prefHeight="18.0" prefWidth="303.0" text="Электронная почта">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpCodeword" alignment="CENTER" layoutX="147.0" layoutY="455.0" opacity="0.5" prefHeight="38.0" prefWidth="310.0" text="  Кодовое слово">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpBirth" alignment="CENTER" layoutX="151.0" layoutY="521.0" opacity="0.5" prefHeight="38.0" prefWidth="310.0" text="Дата рождения (дд.мм.гггг)">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpFirstName" alignment="CENTER" layoutX="148.0" layoutY="86.0" opacity="0.5" prefHeight="18.0" prefWidth="303.0" text="Имя">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpLastName" alignment="CENTER" layoutX="148.0" layoutY="143.0" opacity="0.5" prefHeight="18.0" prefWidth="303.0" text="Фамилия">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpMiddleName" alignment="CENTER" layoutX="151.0" layoutY="198.0" opacity="0.5" prefHeight="18.0" prefWidth="303.0" text="Отчество (при наличии)">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="SignUpNickname" alignment="CENTER" layoutX="148.0" layoutY="267.0" opacity="0.5" prefHeight="18.0" prefWidth="303.0" text="Никнейм (логин)">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
