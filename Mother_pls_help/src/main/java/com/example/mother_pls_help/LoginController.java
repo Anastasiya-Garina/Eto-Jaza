@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -34,7 +36,7 @@ public class LoginController {
     private Button SignInButton;
 
     @FXML
-    private Button SignUpButton;
+    private Button SignUpButtonLogin;
 
     @FXML
     void initialize() {
@@ -52,23 +54,23 @@ public class LoginController {
             }
         });
 
-        SignUpButton.setOnAction(actionEvent -> {
-            SignUpButton.getScene().getWindow().hide();
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/com/example/mother_pls_help/Registration.fxml"));
-
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-
-        });
+//        SignUpButtonLogin.setOnAction(actionEvent -> {
+//            SignUpButtonLogin.getScene().getWindow().hide();
+//
+//            FXMLLoader loader = new FXMLLoader();
+//            loader.setLocation(getClass().getResource("/com/example/mother_pls_help/Registration.fxml"));
+//
+//            try {
+//                loader.load();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            Parent root = loader.getRoot();
+//            Stage stage = new Stage();
+//            stage.setScene(new Scene(root));
+//            stage.showAndWait();
+//
+//        });
 
     }
 
@@ -92,9 +94,50 @@ public class LoginController {
         e.printStackTrace();
     }
     if(counter >=1){
-        System.out.println("Success!");
+        openNewScene("/com/example/mother_pls_help/VideoPlot.fxml");
     }
 
     }
+    @FXML
+    public void signUpClick(ActionEvent event) throws IOException {
+        openNewScene("Registration.fxml");
+    }
 
+    private void openNewScene(String window) {
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(window));
+
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.showAndWait();
+
+
+
+    }
+
+//    public void openNewScene(String window){
+//        //SignUpButtonLogin.getScene().getWindow().hide();
+//
+//        FXMLLoader loader = new FXMLLoader();
+//        loader.setLocation(getClass().getResource(window));
+//
+//        try {
+//            loader.load();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        Parent root = loader.getRoot();
+//        Stage stage = new Stage();
+//        stage.setScene(new Scene(root));
+//        stage.showAndWait();
+//
+//
+//    }
 }

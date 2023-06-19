@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ebe4d9;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mother_pls_help.Answer3_1">
+    <children>
+        <RadioButton fx:id="Milk_button" layoutX="118.0" layoutY="307.0" mnemonicParsing="false" onAction="#getFoodHabit" prefHeight="20.0" prefWidth="202.0" text="Всеядное">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="Continent" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="Plant_button" layoutX="213.0" layoutY="307.0" mnemonicParsing="false" onAction="#getFoodHabit" prefHeight="20.0" prefWidth="169.0" text="Раститетельноядное" toggleGroup="$Continent">
+            <font>
+                <Font size="14.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="Meat_button" layoutX="374.0" layoutY="307.0" mnemonicParsing="false" onAction="#getFoodHabit" prefHeight="20.0" prefWidth="105.0" text="Хищник" toggleGroup="$Continent">
+            <font>
+                <Font size="14.0" />
+            </font></RadioButton>
+        <Label layoutX="173.0" layoutY="37.0" prefHeight="31.0" prefWidth="254.0" text="Выбор следующего видео" textFill="#795714">
+            <font>
+                <Font size="21.0" />
+            </font></Label>
+        <Label alignment="CENTER" layoutX="1.0" layoutY="168.0" prefHeight="31.0" prefWidth="600.0" text="Какой тип питания у этого животного?&#10;&#10;" textFill="#795714">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

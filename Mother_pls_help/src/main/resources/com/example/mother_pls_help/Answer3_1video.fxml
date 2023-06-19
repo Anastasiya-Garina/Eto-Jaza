@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="666.0" prefWidth="430.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mother_pls_help.Answer3_1video">
+    <children>
+        <MediaView fx:id="mediaView" fitHeight="650.0" fitWidth="400.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <Button fx:id="playButton" layoutX="61.0" layoutY="660.0" mnemonicParsing="false" onAction="#playMedia" style="-fx-background-color: #A0522D;" text="Play" textFill="#e4b312">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font></Button>
+        <Button fx:id="pauseButton" layoutX="148.0" layoutY="661.0" mnemonicParsing="false" onAction="#pauseMedia" style="-fx-background-color: #A0522D;" text="Pause" textFill="#e4b312">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></Button>
+        <Button fx:id="resetButton" layoutX="241.0" layoutY="661.0" mnemonicParsing="false" onAction="#resetMedia" style="-fx-background-color: #A0522D;" text="Reset" textFill="#e4b312">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></Button>
+        <Button fx:id="ExitButton" layoutX="337.0" layoutY="661.0" mnemonicParsing="false" onAction="#Quit" style="-fx-background-color: #A0522D;" text="Exit" textFill="#e4b312">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></Button>
+    </children>
+</AnchorPane>

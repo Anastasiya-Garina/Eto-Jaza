@@ -12,7 +12,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="SignUpButton" layoutX="194.0" layoutY="596.0" mnemonicParsing="false" style="-fx-background-color: b3ac98;" text="Зарегистрироваться" textFill="#fcf8f8">
+      <Button fx:id="SignUpButton" layoutX="194.0" layoutY="596.0" mnemonicParsing="false" onAction="#signUpNewUser" style="-fx-background-color: b3ac98;" text="Зарегистрироваться" textFill="#fcf8f8">
          <font>
             <Font size="18.0" />
          </font>
